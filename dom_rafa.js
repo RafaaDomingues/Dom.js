@@ -7,3 +7,11 @@ rodri_ciculo.addEventListener ('dblclick',()=>{
     rodri_ciculo.style.height = `${tamanho_rodri}px`
     tamanho_rodri = tamanho_rodri+20
 })
+
+function botao(novaCor) { 
+    var elemento = document.getElementById("para1");
+    elemento.style.backgroundColor = novaCor;
+    elemento.style.display = 'inline';   
+};
+
+document.querySelector('#para1');
