@@ -27,3 +27,20 @@ imagem.addEventListener('click', ()=>{
         imagem.src = 'foto.jpg'
     }
 });
+
+const form = document.getElementById('texto')
+const section = document.getAnimations('sc')
+
+form.addEventListener("submit", (event)=>{
+    event.preventDefault();
+    input=form.querySelector('input')
+    if(parseInt(input.volue) < 24 || isNaN(input.value) ) {
+        var p = section.querySelector('p')
+        p.innerText = "professor é mais velho"
+        p.style.display = 'block'
+    }else{
+        var p = section.querySelector('p')
+        p.innerHTML = '<h1> Olá, Mundo </h1>'
+        p.style.display = 'block'
+    }
+})
