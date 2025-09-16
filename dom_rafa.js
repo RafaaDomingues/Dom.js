@@ -15,3 +15,15 @@ function botao(novaCor) {
 };
 
 document.querySelector('#para1');
+
+const imagem = document.getElementById('foto')
+let foto_t = false
+
+imagem.addEventListener('click', ()=>{
+    if (foto_t === false) {
+        imagem.src = 'grace.jpeg'
+        foto_t = true        
+    }else{
+        imagem.src = 'foto.jpg'
+    }
+})
