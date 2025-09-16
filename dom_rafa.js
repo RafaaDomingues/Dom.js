@@ -1,11 +1,11 @@
 const rodri_ciculo = document.getElementById('ciculo')
-let tamanho_rodri = 10
+let tamanho_rodri = 1
 
 rodri_ciculo.addEventListener ('dblclick',()=>{
-    rodri_ciculo.style.borderRadius = `${tamanho_rodri}px`
-    rodri_ciculo.style.width = `${tamanho_rodri}px`
-    rodri_ciculo.style.height = `${tamanho_rodri}px`
-    tamanho_rodri = tamanho_rodri+20
+    rodri_ciculo.style.borderRadius = `${tamanho_rodri}px`;
+    rodri_ciculo.style.width = `${tamanho_rodri*2}px`;
+    rodri_ciculo.style.height = `${tamanho_rodri*2}px`;
+    tamanho_rodri +=30;
 })
 
 function botao(novaCor) { 
@@ -21,9 +21,9 @@ let foto_t = false
 
 imagem.addEventListener('click', ()=>{
     if (foto_t === false) {
-        imagem.src = 'grace.jpeg'
+        imagem.src = 'pokedex.png'
         foto_t = true        
     }else{
         imagem.src = 'foto.jpg'
     }
-})
+});
